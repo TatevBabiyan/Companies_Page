@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+
+/*------------------ Header ----------------------*/
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    text-align: right;
+}
+
+.topnav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgba(129, 127, 127, 0.8);
+}
+
+
+.topnav .icon {
+    float: right;
+    padding-right: 20px;
+}
+
+/* ---------------------header-end -----------------------*/
+
+
+
+/*------------------------- Job Listing--------------------- */
+
+.companies-listings {
+    float: right;
+    width: 310%;
+}
+
+.companies-listings h2 {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    top: 80%;
+}
+
+.companies-listings ul {
+    list-style: none;
+}
+
+.companies-listings li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.companies-listings h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.companies-listings p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.companies-listings a {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.companies-listings a:hover {
+    background-color: #ff6600;
+}
+
+
+/* -------------------job listing end--------------------- */
+
+
+
+/*------------------------- Filtering ------------------------*/
+
+.container {
+    display: flex;
+}
+
+.searchbar {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.searchbar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.searchbar i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.sidebar {
+    width: 25%;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-color: #333;
+}
+
+
+.filter {
+    margin-top: 50px;
+    padding: 30px 40px;
+    position: sticky;
+    top: 0;
+}
+
+
+.filter h3 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.content {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    border-bottom: 1px solid #333;
+    color: white;
+    background-color: #333;
+}
+
+.header p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fil-p {
+    padding: 15px 15px;
+    background-color: white;
+    margin: 7px 0;
+    cursor: pointer;
+    color: #333;
+    text-align: justify;
+}
+
+.fil-p:hover {
+    color: orangered;
+    background-color: #aaa;
+}
+
+button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #aaa;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+#root {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+
+.img-box {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.buttom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .content {
+        width: 100%;
+        position: static;
+        padding: 0 20px;
+    }
+
+    .header p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+/* ------------------------------filtering end ---------------------------------*/
+
+
+/*--------------------- footer------------------------- */
+
+.contain {
+    max-width: 1440px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contain h2 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 10rem;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    background: #333;
+    box-shadow: -5px -0px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 0;
+    grid-gap: 2.5rem;
+}
+
+.footer_headings {
+    color: white;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.first_section img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.first_section p {
+    padding: 1.5rem 0;
+    text-align: justify;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+    color: #1c2833;
+}
+
+.social_icons i:hover {
+    transform: translateY(-5px);
+}
+
+
+/* second sections */
+.second_section ul {
+    list-style: none;
+}
+
+.second_section ul li {
+    margin: 1rem 0;
+}
+
+.second_section ul li:first-child {
+    margin-top: 0;
+}
+
+
+/* third section */
+.third_section ul {
+    list-style: none;
+}
+
+.third_section ul li {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.third_section ul li:first-child {
+    margin-top: 0;
+}
+
+.third_section ul li i {
+    margin-right: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.third_section span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* fourth section */
+.form_control input,
+textarea {
+    outline: none;
+    border: none;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.fourth_section button {
+    display: block;
+    width: 100%;
+    outline: none;
+    background: grey;
+    border: none;
+    color: white;
+    padding: 0.6rem 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.footer_txt {
+    background: #333;
+    color: white;
+    padding: 1.1rem 0;
+    text-align: center;
+    box-shadow: -5px -0px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*----------------------------- footer-end ------------------------*/
+
+
+/* Responsive Devices */
+
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
